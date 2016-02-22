@@ -13,4 +13,8 @@ if ba
         | ;var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(hm, s);})();
 
 //- LaTex
-script(src="https://cdn.bootcss.com/mathjax/2.5.3/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
+script(type="text/x-mathjax-config").
+MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(', '\\)']]}
+    })
+script(type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML")
